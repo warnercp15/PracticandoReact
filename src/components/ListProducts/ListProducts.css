@@ -1,0 +1,13 @@
+#listContainer{
+    margin-left: 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-content:flex-start;
+    width: 70vw;
+    height: 140vh;
+    overflow: auto;
+}
+
+#listContainer div{
+    margin: 10px;
+}
