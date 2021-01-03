@@ -1,10 +1,10 @@
 import React from 'react'
-import "./Footer.css";
+import "../App.css";
 
 const Footer = () => {
     return ( 
         <div id="footer">
-            <p>Practicing useState concept &copy; 2021</p>
+            Practicing useState concept and Responsive Desing with CssGrid Layout & FlexBox &copy; 2021
         </div>
     );
 }                

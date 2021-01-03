@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import Footer from './components/Footer/Footer';
+import Footer from './components/Footer';
 import Product from './components/Product/Product';
 import ListProducts from './components/ListProducts/ListProducts';
 import "./App.css";
@@ -17,26 +17,24 @@ function App() {
 
     return (
         <div className="App">
-            <div id="mainContainer">
-                <div id="productsContainer">
-                    <h3>Products</h3>
-                    {products.map(product=>(
-                        <Product
-                            key={product.id}
-                            product={product}
-                            products={products}
-                            listProducts={listProducts}
-                            selectProduct={selectProduct}
-                        />
-                    ))}
-                </div>
-                <div id='listShopping'>
-                    <h3>Shopping Cart</h3>
-                    <ListProducts
+            <div>
+                <h1>Products</h1>
+                {products.map(product=>(
+                    <Product
+                        key={product.id}
+                        product={product}
+                        products={products}
                         listProducts={listProducts}
                         selectProduct={selectProduct}
                     />
-                </div>
+                ))}
+            </div>
+            <div>
+                <h1>Shopping Cart</h1>
+                <ListProducts
+                    listProducts={listProducts}
+                    selectProduct={selectProduct}
+                />
             </div>
             <Footer/>
         </div>

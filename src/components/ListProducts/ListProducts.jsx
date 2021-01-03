@@ -4,7 +4,7 @@ import './ListProducts.css';
 
 const ListProducts = ({listProducts,selectProduct}) => {
     return ( 
-        <div id="listContainer">
+        <div id="listShoppingCart">
             {listProducts.length===0
             ?<p>No products selected</p>
             :listProducts.map(product=>(

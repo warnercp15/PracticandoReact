@@ -1,13 +1,18 @@
-#listContainer{
-    margin-left: 5vw;
+#listShoppingCart{
     display: flex;
     flex-wrap: wrap;
     align-content:flex-start;
-    width: 70vw;
-    height: 140vh;
+    height: 190vh;
     overflow: auto;
 }
 
-#listContainer div{
-    margin: 10px;
+#listShoppingCart > p{
+    font-size: 1rem;
+    height: 190vh;
+    line-height: 190vh;
+    margin: auto;
+}
+
+div .card{
+    margin: 0.6em;
 }

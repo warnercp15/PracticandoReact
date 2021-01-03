@@ -20,8 +20,8 @@ const Product = ({product,products,listProducts,selectProduct}) => {
             <p>{name}</p>
             <img src={imageUrl} alt={name}/>
             {products
-                ?<button type="button" onClick={()=>{addProduct(id)}} style={{background:"green"}}>+</button>
-                :<button type="button" onClick={()=>{deleteProduct(id)}} style={{background:"red"}}>x</button>
+                ?<button type="button" onClick={()=>{addProduct(id)}} style={{background:"green"}}>Add</button>
+                :<button type="button" onClick={()=>{deleteProduct(id)}} style={{background:"red"}}>Delete</button>
             }
         </div>
      );
