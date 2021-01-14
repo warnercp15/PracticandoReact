@@ -1,1 +1,1 @@
-Repository to put into practice and refresh some React concepts like Hooks, Redux
+Repository to implement Usestate Hook and Responsive Design
